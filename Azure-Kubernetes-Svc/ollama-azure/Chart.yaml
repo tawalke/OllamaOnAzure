@@ -1,0 +1,21 @@
+apiVersion: v2
+name: ollama-azure
+description: A Helm chart to run Ollama on Azure Kubernetes Service
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+
+dependencies: 
+  - name: ollama
+    version: ">= 0.18.0"
+    repository: https://otwld.github.io/ollama-helm/
+
+keywords:
+  - azure
+  - aks
+  - ollama
+  - ai
+  - llm
+  - llama
+  - mistral
+  - codellama

@@ -1,0 +1,26 @@
+# Default values for ollama-azure.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+nameOverride: "azure-ollama"
+fullnameOverride: "azure-ollama"
+
+# Ollama parameters
+ollama:
+  nameOverride: "azure-ollama"
+  fullnameOverride: "azure-ollama"
+  
+  gpu:
+    # -- Enable GPU integration
+    enabled: false
+
+    # -- Specify the number of GPU
+    number: 1
+
+  # -- List of models to pull at container startup
+  models:
+    - llama2
+    - mistral
+    - codellama
