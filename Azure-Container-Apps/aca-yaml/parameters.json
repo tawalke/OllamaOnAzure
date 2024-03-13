@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": ""
+        },
+        "name": {
+            "value": "ollama-on-aca"
+        },
+        "location": {
+            "value": "westus3"
+        },
+        "environmentId": {
+            "value": "/subscriptions/<>/resourceGroups/ollama-gpu-test/providers/Microsoft.App/managedEnvironments/ollama-aca-env"
+        },
+        "containers": {
+            "value": [
+                {
+                    "name": "ollama-on-aca",
+                    "image": "docker.io/ollama/ollama:latest",
+                    "command": [],
+                    "resources": {
+                        "cpu": 24,
+                        "memory": "220Gi"
+                    }
+                }
+            ]
+        },
+        "registries": {
+            "value": []
+        },
+        "secrets": {
+            "value": {
+                "arrayValue": []
+            }
+        },
+        "ingress": {
+            "value": {
+                "external": true,
+                "transport": "Auto",
+                "allowInsecure": true,
+                "targetPort": 11434,
+                "stickySessions": {
+                    "affinity": "none"
+                },
+                "additionalPortMappings": []
+            }
+        },
+        "environmentName": {
+            "value": "ollama-aca-env"
+        },
+        "workspaceId": {
+            "value": "/subscriptions/12e1301c-3b98-4a91-a1b7-ebe66953bf56/resourceGroups/ollama-gpu-test/providers/Microsoft.OperationalInsights/workspaces/workspace-ollamagputestGUbw"
+        }
+    }
+}
