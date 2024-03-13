@@ -12,7 +12,7 @@
             "value": "westus3"
         },
         "environmentId": {
-            "value": "/subscriptions/<>/resourceGroups/ollama-gpu-test/providers/Microsoft.App/managedEnvironments/ollama-aca-env"
+            "value": "/subscriptions/12e1301c-3b98-4a91-a1b7-ebe66953bf56/resourceGroups/ollama-gpu-test/providers/Microsoft.App/managedEnvironments/ollama-aca-env"
         },
         "containers": {
             "value": [
